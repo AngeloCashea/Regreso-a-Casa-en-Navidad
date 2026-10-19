@@ -1,0 +1,6 @@
+{
+  "name": "Regreso a Casa en Navidad",
+  "description": "Calendario festivo interactivo e itinerario de regreso a Caracas en Navidad 2026, con mapa ilustrado, planes y seguimiento.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

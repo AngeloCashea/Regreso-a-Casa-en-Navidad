@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+@keyframes snowfall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.85; }
+  90% { opacity: 0.6; }
+  100% { transform: translateY(320px) rotate(360deg); opacity: 0; }
+}
+
+@keyframes mapSnowfall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+  15% { opacity: 0.85; }
+  100% { transform: translateY(240px) rotate(360deg); opacity: 0; }
+}
+
+@keyframes festivePulse {
+  0%, 100% {
+    box-shadow: 0 4px 18px rgba(178, 34, 34, 0.35);
+  }
+  50% {
+    box-shadow: 0 6px 28px rgba(217, 119, 6, 0.65), 0 0 15px rgba(254, 240, 138, 0.4);
+  }
+}
+
+@keyframes subtleFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.animate-snow {
+  animation: snowfall linear infinite;
+}
+
+.animate-map-snow {
+  animation: mapSnowfall linear infinite;
+}
+
+.animate-music-pulse {
+  animation: festivePulse 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: subtleFloat 3s ease-in-out infinite;
+}
+
+/* Custom styled scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(139, 26, 26, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 26, 26, 0.4);
+}
