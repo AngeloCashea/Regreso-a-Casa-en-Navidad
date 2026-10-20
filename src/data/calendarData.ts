@@ -942,10 +942,13 @@ export const MAP_PLACES: MapPlace[] = [
     name: 'Poke Pok',
     short: 'Poke Pok',
     cat: 'food',
-    zone: 'Pendientes de sede',
+    zone: 'Chacao, Las Mercedes y Bello Monte',
     icon: '🥗',
-    status: 'pending',
-    summary: 'Restaurante de poke bowls frescos y saludables en Caracas.',
+    lat: 10.4835,
+    lon: -66.8602,
+    status: 'identified',
+    summary:
+      'Restaurante de poke bowls hawaianos en Las Mercedes (calle Madrid). Bowls frescos, salmón, atún y opciones saludables.',
     activities: ['8 de diciembre · Comer en Poke Pok'],
   },
 ];
